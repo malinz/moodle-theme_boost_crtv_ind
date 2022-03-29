@@ -18,15 +18,15 @@
  * Autoprefixer.
  *
  * This autoprefixer has been developed to satisfy the basic needs of the
- * theme boost_crtve_stud when working with Bootstrap 4 alpha. We do not recommend
+ * theme boost_crtv_ind when working with Bootstrap 4 alpha. We do not recommend
  * that this tool is shared, nor used outside of this theme.
  *
- * @package    theme_boost_crtve_stud
+ * @package    theme_boost_crtv_ind
  * @copyright  2016 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_boost_crtve_stud;
+namespace theme_boost_crtv_ind;
 defined('MOODLE_INTERNAL') || die();
 
 use Sabberworm\CSS\CSSList\CSSList;
@@ -54,7 +54,7 @@ use Sabberworm\CSS\Value\ValueList;
  *
  * Very basic implementation covering simple needs for Bootstrap 4.
  *
- * @package    theme_boost_crtve_stud
+ * @package    theme_boost_crtv_ind
  * @copyright  2016 Frédéric Massart - FMCorz.net
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -104,6 +104,8 @@ class autoprefixer {
      * @param Document $tree The CSS tree.
      */
     public function __construct(Document $tree) {
+        debugging('theme_boost_crtv_ind\autoprefixer() is deprecated. Required prefixes for Bootstrap ' .
+            'are now in theme/boost_crtv_ind/scss/moodle/prefixes.scss', DEBUG_DEVELOPER);
         $this->tree = $tree;
 
         $pseudos = array_map(function($pseudo) {

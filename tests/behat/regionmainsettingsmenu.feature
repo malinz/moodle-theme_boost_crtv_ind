@@ -1,6 +1,6 @@
-@javascript @theme_boost_crtve_stud
+@javascript @theme_boost_crtv_ind
 Feature: Region main settings menu
-  To navigate in boost_crtve_stud theme I need to use the region main settings menu
+  To navigate in boost_crtv_ind theme I need to use the region main settings menu
 
   Background:
     Given the following "courses" exist:

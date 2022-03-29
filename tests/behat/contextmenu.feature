@@ -1,6 +1,6 @@
-@javascript @theme_boost_crtve_stud
+@javascript @theme_boost_crtv_ind
 Feature: Context settings menu
-  To navigate in boost_crtve_stud theme I need to use the context settings menu
+  To navigate in boost_crtv_ind theme I need to use the context settings menu
 
   Background:
     Given the following "courses" exist:

@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace theme_boost_crtve_stud\output;
+namespace theme_boost_crtv_ind\output;
 
 use moodle_url;
 use custom_menu_item;
@@ -25,7 +25,7 @@ defined('MOODLE_INTERNAL') || die;
 /**
  * Renderers to align Moodle's HTML with that expected by Bootstrap
  *
- * @package    theme_boost_crtve_stud
+ * @package    theme_boost_crtv_ind
  * @copyright  2012 Bas Brands, www.basbrands.nl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -44,7 +44,6 @@ class core_renderer extends \core_renderer {
         return $this->render_single_button($button);
     }
      
-     
     protected function render_custom_menu(custom_menu $menu) {
         global $CFG;
         
@@ -55,7 +54,7 @@ class core_renderer extends \core_renderer {
         $mycourses = $this->page->navigation->get('mycourses');
  
         if (isloggedin() && $mycourses && $mycourses->has_children()) {
-            $branchlabel = get_string('mycourses', 'theme_boost_crtve_stud');
+            $branchlabel = get_string('mycourses', 'theme_boost_crtv_ind');
             $branchurl   = new moodle_url('/course/index.php');
             $branchtitle = $branchlabel;
             $branchsort  = 10000;
@@ -99,5 +98,4 @@ class core_renderer extends \core_renderer {
 
         return $content;
     }
-    
- }
+}

@@ -15,15 +15,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * boost_crtve_stud.
+ * boost_crtv_ind.
  *
- * @package    theme_boost_crtve_stud
+ * @package    theme_boost_crtv_ind
  * @copyright  2016 Frédéric Massart
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020061500;
-$plugin->requires  = 2020060900;
-$plugin->component = 'theme_boost_crtve_stud';
+$plugin->version   = 2021051700;
+$plugin->requires  = 2021051100;
+$plugin->component = 'theme_boost_crtv_ind';

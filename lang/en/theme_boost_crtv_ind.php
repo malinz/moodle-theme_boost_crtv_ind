@@ -17,7 +17,7 @@
 /**
  * Language file.
  *
- * @package   theme_boost_crtve_stud
+ * @package   theme_boost_crtv_ind
  * @copyright 2016 Frédéric Massart
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -31,17 +31,17 @@ $string['brandcolor'] = 'Brand colour';
 $string['brandcolor_desc'] = 'The accent colour.';
 $string['bootswatch'] = 'Bootswatch';
 $string['bootswatch_desc'] = 'A bootswatch is a set of Bootstrap variables and css to style Bootstrap';
-$string['choosereadme'] = 'Creative Studies Theme is a modern highly-customisable theme. This theme is intended to be used directly, or as a parent theme when creating new themes utilising Bootstrap 4.';
+$string['choosereadme'] = 'boost_crtv_ind is a modern highly-customisable theme. This theme is intended to be used directly, or as a parent theme when creating new themes utilising Bootstrap 4.';
 $string['currentinparentheses'] = '(current)';
-$string['configtitle'] = 'Creative Studies Theme';
+$string['configtitle'] = 'Creative Industries Theme';
 $string['generalsettings'] = 'General settings';
 $string['nobootswatch'] = 'None';
-$string['pluginname'] = 'Creative Studies Theme';
+$string['pluginname'] = 'Creative Industries Theme';
 $string['presetfiles'] = 'Additional theme preset files';
-$string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/boost_crtve_stud_Presets">boost_crtve_stud presets</a> for information on creating and sharing your own preset files, and see the <a href="https://archive.moodle.net/boost_crtve_stud">Presets repository</a> for presets that others have shared.';
+$string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/boost_crtv_ind_Presets">boost_crtv_ind presets</a> for information on creating and sharing your own preset files, and see the <a href="https://archive.moodle.net/boost_crtv_ind">Presets repository</a> for presets that others have shared.';
 $string['preset'] = 'Theme preset';
 $string['preset_desc'] = 'Pick a preset to broadly change the look of the theme.';
-$string['privacy:metadata'] = 'The boost_crtve_stud theme does not store any personal data about any user.';
+$string['privacy:metadata'] = 'The boost_crtv_ind theme does not store any personal data about any user.';
 $string['rawscss'] = 'Raw SCSS';
 $string['rawscss_desc'] = 'Use this field to provide SCSS or CSS code which will be injected at the end of the style sheet.';
 $string['rawscsspre'] = 'Raw initial SCSS';
@@ -67,12 +67,7 @@ $string['region-lower-navdrawer'] = 'Nav-Drawer Bottom';
 $string['privacy:metadata:preference:draweropennav'] = 'The user\'s preference for hiding or showing the drawer menu navigation.';
 $string['privacy:drawernavclosed'] = 'The current preference for the navigation drawer is closed.';
 $string['privacy:drawernavopen'] = 'The current preference for the navigation drawer is open.';
-
-$string['privacy:metadata:preference:draweropennav'] = 'The user\'s preference for hiding or showing the drawer menu navigation.';
-$string['privacy:drawernavclosed'] = 'The current preference for the navigation drawer is closed.';
-$string['privacy:drawernavopen'] = 'The current preference for the navigation drawer is open.';
 $string['totop'] = 'Go to top';
-
 
 // My Courses custom menu dropdown
 $string['mycourses'] = 'My Courses';

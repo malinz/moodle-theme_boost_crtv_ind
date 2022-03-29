@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * @package   theme_boost_crtve_stud
+ * @package   theme_boost_crtv_ind
  * @copyright 2016 Ryan Wyllie
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -23,18 +23,18 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
-    $settings = new theme_boost_crtve_stud_admin_settingspage_tabs('themesettingboost_crtve_stud', get_string('configtitle', 'theme_boost_crtve_stud'));
-    $page = new admin_settingpage('theme_boost_crtve_stud_general', get_string('generalsettings', 'theme_boost_crtve_stud'));
+    $settings = new theme_boost_crtv_ind_admin_settingspage_tabs('themesettingboost_crtv_ind', get_string('configtitle', 'theme_boost_crtv_ind'));
+    $page = new admin_settingpage('theme_boost_crtv_ind_general', get_string('generalsettings', 'theme_boost_crtv_ind'));
 
     // Preset.
-    $name = 'theme_boost_crtve_stud/preset';
-    $title = get_string('preset', 'theme_boost_crtve_stud');
-    $description = get_string('preset_desc', 'theme_boost_crtve_stud');
+    $name = 'theme_boost_crtv_ind/preset';
+    $title = get_string('preset', 'theme_boost_crtv_ind');
+    $description = get_string('preset_desc', 'theme_boost_crtv_ind');
     $default = 'default.scss';
 
     $context = context_system::instance();
     $fs = get_file_storage();
-    $files = $fs->get_area_files($context->id, 'theme_boost_crtve_stud', 'preset', 0, 'itemid, filepath, filename', false);
+    $files = $fs->get_area_files($context->id, 'theme_boost_crtv_ind', 'preset', 0, 'itemid, filepath, filename', false);
 
     $choices = [];
     foreach ($files as $file) {
@@ -58,32 +58,32 @@ if ($ADMIN->fulltree) {
     $choices['swift.scss'] = 'swift.scss';
     $choices['plain.scss'] = 'plain.scss';
 
-    $setting = new admin_setting_configthemepreset($name, $title, $description, $default, $choices, 'boost_crtve_stud');
+    $setting = new admin_setting_configthemepreset($name, $title, $description, $default, $choices, 'boost_crtv_ind');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Preset files setting.
-    $name = 'theme_boost_crtve_stud/presetfiles';
-    $title = get_string('presetfiles','theme_boost_crtve_stud');
-    $description = get_string('presetfiles_desc', 'theme_boost_crtve_stud');
+    $name = 'theme_boost_crtv_ind/presetfiles';
+    $title = get_string('presetfiles','theme_boost_crtv_ind');
+    $description = get_string('presetfiles_desc', 'theme_boost_crtv_ind');
 
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'preset', 0,
         array('maxfiles' => 20, 'accepted_types' => array('.scss')));
     $page->add($setting);
 
     // Background image setting.
-    $name = 'theme_boost_crtve_stud/backgroundimage';
-    $title = get_string('backgroundimage', 'theme_boost_crtve_stud');
-    $description = get_string('backgroundimage_desc', 'theme_boost_crtve_stud');
+    $name = 'theme_boost_crtv_ind/backgroundimage';
+    $title = get_string('backgroundimage', 'theme_boost_crtv_ind');
+    $description = get_string('backgroundimage_desc', 'theme_boost_crtv_ind');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'backgroundimage');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Variable $body-color.
     // We use an empty default value because the default colour should come from the preset.
-    $name = 'theme_boost_crtve_stud/brandcolor';
-    $title = get_string('brandcolor', 'theme_boost_crtve_stud');
-    $description = get_string('brandcolor_desc', 'theme_boost_crtve_stud');
+    $name = 'theme_boost_crtv_ind/brandcolor';
+    $title = get_string('brandcolor', 'theme_boost_crtv_ind');
+    $description = get_string('brandcolor_desc', 'theme_boost_crtv_ind');
     $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
@@ -92,17 +92,17 @@ if ($ADMIN->fulltree) {
     $settings->add($page);
 
     // Advanced settings.
-    $page = new admin_settingpage('theme_boost_crtve_stud_advanced', get_string('advancedsettings', 'theme_boost_crtve_stud'));
+    $page = new admin_settingpage('theme_boost_crtv_ind_advanced', get_string('advancedsettings', 'theme_boost_crtv_ind'));
 
     // Raw SCSS to include before the content.
-    $setting = new admin_setting_scsscode('theme_boost_crtve_stud/scsspre',
-        get_string('rawscsspre', 'theme_boost_crtve_stud'), get_string('rawscsspre_desc', 'theme_boost_crtve_stud'), '', PARAM_RAW);
+    $setting = new admin_setting_scsscode('theme_boost_crtv_ind/scsspre',
+        get_string('rawscsspre', 'theme_boost_crtv_ind'), get_string('rawscsspre_desc', 'theme_boost_crtv_ind'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 
     // Raw SCSS to include after the content.
-    $setting = new admin_setting_scsscode('theme_boost_crtve_stud/scss', get_string('rawscss', 'theme_boost_crtve_stud'),
-        get_string('rawscss_desc', 'theme_boost_crtve_stud'), '', PARAM_RAW);
+    $setting = new admin_setting_scsscode('theme_boost_crtv_ind/scss', get_string('rawscss', 'theme_boost_crtv_ind'),
+        get_string('rawscss_desc', 'theme_boost_crtv_ind'), '', PARAM_RAW);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 

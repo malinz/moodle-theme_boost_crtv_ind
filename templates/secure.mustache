@@ -15,9 +15,9 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boost_crtve_stud/secure
+    @template theme_boost_crtv_ind/secure
 
-    boost_crtve_stud secure layout template.
+    boost_crtv_ind secure layout template.
 
     Context variables required for this template:
     * sitename - The name of the site
@@ -34,7 +34,7 @@
          }
     }
 }}
-{{> theme_boost_crtve_stud/head }}
+{{> theme_boost_crtv_ind/head }}
 
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
@@ -43,7 +43,7 @@
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{>theme_boost_crtve_stud/navbar-secure}}
+    {{>theme_boost_crtv_ind/navbar-secure}}
 
     <div id="page" class="container-fluid">
         {{! Secured full header }}
@@ -88,8 +88,8 @@
 </body>
 </html>
 {{#js}}
-M.util.js_pending('theme_boost_crtve_stud/loader');
-require(['theme_boost_crtve_stud/loader'], function() {
-    M.util.js_complete('theme_boost_crtve_stud/loader');
+M.util.js_pending('theme_boost_crtv_ind/loader');
+require(['theme_boost_crtv_ind/loader'], function() {
+    M.util.js_complete('theme_boost_crtv_ind/loader');
 });
 {{/js}}

@@ -15,11 +15,11 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boost_crtve_stud/columns2
+    @template theme_boost_crtv_ind/columns2
 
     Admin time setting template.
 
-    boost_crtve_stud 2 column layout template.
+    boost_crtv_ind 2 column layout template.
 
     Context variables required for this template:
     * sitename - The name of the site
@@ -48,7 +48,7 @@
         "hasregionmainsettingsmenu": false
     }
 }}
-{{> theme_boost_crtve_stud/head }}
+{{> theme_boost_crtv_ind/head }}
 
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
@@ -57,10 +57,10 @@
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{> theme_boost_crtve_stud/navbar }}
-    {{> theme_boost_crtve_stud/nav-drawer }}
+    {{> theme_boost_crtv_ind/navbar }}
+    {{> theme_boost_crtv_ind/nav-drawer }}
 
-    <div id="page" class="container-fluid d-print-block">
+    <div id="page" name="3col" class="container-fluid d-print-block">
         {{{ output.full_header }}}
                 <!-- ADDITIONAL BLOCK START -->
                 {{#hastopfullwidth}}
@@ -113,20 +113,20 @@
         </div>
     </div>
     {{{ output.standard_after_main_region_html }}}
-    {{> theme_boost_crtve_stud/footer }}
+    {{> theme_boost_crtv_ind/footer }}
 </div>
 
 </body>
 </html>
 {{#js}}
-M.util.js_pending('theme_boost_crtve_stud/loader');
-require(['theme_boost_crtve_stud/loader'], function() {
-    M.util.js_complete('theme_boost_crtve_stud/loader');
+M.util.js_pending('theme_boost_crtv_ind/loader');
+require(['theme_boost_crtv_ind/loader'], function() {
+    M.util.js_complete('theme_boost_crtv_ind/loader');
 });
 
-M.util.js_pending('theme_boost_crtve_stud/drawer');
-require(['theme_boost_crtve_stud/drawer'], function(drawer) {
+M.util.js_pending('theme_boost_crtv_ind/drawer');
+require(['theme_boost_crtv_ind/drawer'], function(drawer) {
     drawer.init();
-    M.util.js_complete('theme_boost_crtve_stud/drawer');
+    M.util.js_complete('theme_boost_crtv_ind/drawer');
 });
 {{/js}}

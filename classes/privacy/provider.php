@@ -15,21 +15,21 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Privacy Subsystem implementation for theme_boost_crtve_stud.
+ * Privacy Subsystem implementation for theme_boost_crtv_ind.
  *
- * @package    theme_boost_crtve_stud
+ * @package    theme_boost_crtv_ind
  * @copyright  2018 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_boost_crtve_stud\privacy;
+namespace theme_boost_crtv_ind\privacy;
 
 use \core_privacy\local\metadata\collection;
 
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * The boost_crtve_stud theme stores a user preference data.
+ * The boost_crtv_ind theme stores a user preference data.
  *
  * @copyright  2018 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -63,12 +63,12 @@ class provider implements
         $draweropennavpref = get_user_preferences(self::DRAWER_OPEN_NAV, null, $userid);
 
         if (isset($draweropennavpref)) {
-            $preferencestring = get_string('privacy:drawernavclosed', 'theme_boost_crtve_stud');
+            $preferencestring = get_string('privacy:drawernavclosed', 'theme_boost_crtv_ind');
             if ($draweropennavpref == 'true') {
-                $preferencestring = get_string('privacy:drawernavopen', 'theme_boost_crtve_stud');
+                $preferencestring = get_string('privacy:drawernavopen', 'theme_boost_crtv_ind');
             }
             \core_privacy\local\request\writer::export_user_preference(
-                'theme_boost_crtve_stud',
+                'theme_boost_crtv_ind',
                 self::DRAWER_OPEN_NAV,
                 $draweropennavpref,
                 $preferencestring

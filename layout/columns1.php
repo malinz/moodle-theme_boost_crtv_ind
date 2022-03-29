@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * A one column layout for the boost_crtve_stud theme.
+ * A one column layout for the boost_crtv_ind theme.
  *
- * @package   theme_boost_crtve_stud
+ * @package   theme_boost_crtv_ind
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -32,5 +32,5 @@ $templatecontext = [
     'bodyattributes' => $bodyattributes
 ];
 
-echo $OUTPUT->render_from_template('theme_boost_crtve_stud/columns1', $templatecontext);
+echo $OUTPUT->render_from_template('theme_boost_crtv_ind/columns1', $templatecontext);
 

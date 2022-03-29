@@ -1,4 +1,4 @@
-@tool @tool_usertours @theme_boost_crtve_stud
+@tool @tool_usertours @theme_boost_crtv_ind
 Feature: Apply tour filters to a tour for Classic
   In order to give more directed tours
   As an administrator
@@ -20,14 +20,14 @@ Feature: Apply tour filters to a tour for Classic
     Then I should not see "Welcome to your personal learning space. We'd like to give you a quick tour to show you some of the areas you may find helpful"
 
   @javascript
-  Scenario: Add a tour for theme boost_crtve_stud
+  Scenario: Add a tour for theme boost_crtv_ind
     Given I log in as "admin"
     And I add a new user tour with:
       | Name                | First tour |
       | Description         | My first tour |
       | Apply to URL match  | /my/% |
       | Tour is enabled     | 1 |
-      | Theme               | boost_crtve_stud |
+      | Theme               | boost_crtv_ind |
     And I add steps to the "First tour" tour:
       | targettype                  | Title             | Content |
       | Display in middle of page   | Welcome           | Welcome to your personal learning space. We'd like to give you a quick tour to show you some of the areas you may find helpful |

@@ -15,7 +15,7 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boost_crtve_stud/login
+    @template theme_boost_crtv_ind/login
 
     Login page template
 
@@ -29,7 +29,7 @@
         }
     }
 }}
-{{> theme_boost_crtve_stud/head }}
+{{> theme_boost_crtv_ind/head }}
 
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
@@ -68,8 +68,8 @@
 </body>
 </html>
 {{#js}}
-M.util.js_pending('theme_boost_crtve_stud/loader');
-require(['theme_boost_crtve_stud/loader'], function() {
-  M.util.js_complete('theme_boost_crtve_stud/loader');
+M.util.js_pending('theme_boost_crtv_ind/loader');
+require(['theme_boost_crtv_ind/loader'], function() {
+  M.util.js_complete('theme_boost_crtv_ind/loader');
 });
 {{/js}}
